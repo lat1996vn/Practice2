@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ListItem" id="SdR-mY-mGQ" customClass="ListItem" customModule="Practice2" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="335" height="169"/>
+            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                <rect key="frame" x="0.0" y="0.0" width="335" height="169"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Image" translatesAutoresizingMaskIntoConstraints="NO" id="XU3-Tu-bUm">
+                        <rect key="frame" x="0.0" y="0.0" width="335" height="120"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="335" id="PUP-fE-RAE"/>
+                            <constraint firstAttribute="height" constant="120" id="wbH-uN-DXQ"/>
+                        </constraints>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hnB-tz-Fkm">
+                        <rect key="frame" x="285" y="5" width="45" height="45"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="45" id="mfF-Uh-pY4"/>
+                            <constraint firstAttribute="width" constant="45" id="wAK-yQ-cku"/>
+                        </constraints>
+                        <state key="normal" image="Play"/>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dessert's Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Aav-mD-eLy">
+                        <rect key="frame" x="16" y="134" width="232" height="18"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="232" id="SY1-zF-AzP"/>
+                            <constraint firstAttribute="height" constant="18" id="njk-t6-S8F"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
+                        <color key="textColor" red="0.4039215686" green="0.39607843139999999" blue="0.39607843139999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="236" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="412-S6-Hff">
+                        <rect key="frame" x="271" y="140" width="19.5" height="13"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                        <color key="textColor" red="0.69411764710000001" green="0.68235294120000001" blue="0.68235294120000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HYx-G8-SUL">
+                        <rect key="frame" x="299" y="134" width="20" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="20" id="Wdx-54-R2c"/>
+                            <constraint firstAttribute="height" constant="20" id="lcP-Ht-4GD"/>
+                        </constraints>
+                        <state key="normal" image="Love">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </state>
+                        <state key="disabled" backgroundImage="Loved"/>
+                        <state key="selected" image="Loved"/>
+                        <connections>
+                            <action selector="btnLikePressed:" destination="SdR-mY-mGQ" eventType="touchUpInside" id="R09-g0-eNp"/>
+                        </connections>
+                    </button>
+                </subviews>
+            </view>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="XU3-Tu-bUm" secondAttribute="trailing" id="Iw3-yJ-dgM"/>
+                <constraint firstAttribute="bottom" secondItem="412-S6-Hff" secondAttribute="bottom" constant="16" id="J2z-u6-N1N"/>
+                <constraint firstAttribute="trailing" secondItem="HYx-G8-SUL" secondAttribute="trailing" constant="16" id="Kwj-H5-zYI"/>
+                <constraint firstItem="HYx-G8-SUL" firstAttribute="leading" secondItem="412-S6-Hff" secondAttribute="trailing" constant="8.5" id="U7e-lW-33f"/>
+                <constraint firstItem="hnB-tz-Fkm" firstAttribute="top" secondItem="SdR-mY-mGQ" secondAttribute="top" constant="5" id="WcQ-6h-HSr"/>
+                <constraint firstItem="412-S6-Hff" firstAttribute="top" secondItem="XU3-Tu-bUm" secondAttribute="bottom" constant="20" id="X2Z-Ka-na0"/>
+                <constraint firstAttribute="trailing" secondItem="hnB-tz-Fkm" secondAttribute="trailing" constant="5" id="agN-m9-fLP"/>
+                <constraint firstItem="HYx-G8-SUL" firstAttribute="top" secondItem="XU3-Tu-bUm" secondAttribute="bottom" constant="14" id="bTS-qq-Aif"/>
+                <constraint firstItem="Aav-mD-eLy" firstAttribute="top" secondItem="XU3-Tu-bUm" secondAttribute="bottom" constant="14" id="eCX-88-tfQ"/>
+                <constraint firstItem="Aav-mD-eLy" firstAttribute="leading" secondItem="SdR-mY-mGQ" secondAttribute="leading" constant="16" id="f9F-Le-KsN"/>
+                <constraint firstItem="412-S6-Hff" firstAttribute="leading" secondItem="Aav-mD-eLy" secondAttribute="trailing" constant="23" id="o1Y-Xu-h2G"/>
+                <constraint firstAttribute="bottom" secondItem="Aav-mD-eLy" secondAttribute="bottom" constant="17" id="tcx-OL-X54"/>
+                <constraint firstItem="XU3-Tu-bUm" firstAttribute="top" secondItem="SdR-mY-mGQ" secondAttribute="top" id="vyG-Uv-0YP"/>
+                <constraint firstAttribute="bottom" secondItem="HYx-G8-SUL" secondAttribute="bottom" constant="15" id="y71-3O-i6S"/>
+                <constraint firstItem="XU3-Tu-bUm" firstAttribute="leading" secondItem="SdR-mY-mGQ" secondAttribute="leading" id="zBv-3R-uch"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="uhj-Ga-eXi"/>
+            <size key="customSize" width="257" height="132"/>
+            <connections>
+                <outlet property="btnLike" destination="HYx-G8-SUL" id="iqI-zZ-kbR"/>
+                <outlet property="imgRecipe" destination="XU3-Tu-bUm" id="74i-kd-mCB"/>
+                <outlet property="lblLikeCount" destination="412-S6-Hff" id="w3p-gq-iMY"/>
+                <outlet property="lblTitle" destination="Aav-mD-eLy" id="pEP-Ti-VBa"/>
+            </connections>
+            <point key="canvasLocation" x="-10" y="-347"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="Image" width="335" height="120"/>
+        <image name="Love" width="21" height="18"/>
+        <image name="Loved" width="20" height="18"/>
+        <image name="Play" width="80" height="80"/>
+    </resources>
+</document>
